@@ -1,4 +1,4 @@
-# irisit
+# IRIS
 
 ## Project setup
 ```
