@@ -1,7 +1,9 @@
 <template>
-  <div>
+  <div class="container-fluid" style="height: 100%">
     <Page1 />
     <Page2 />
+    <Page3 />
+    <Page4 />
   </div>
 </template>
 
@@ -10,8 +12,10 @@
 
 <script>
 // import HelloWorld from '../components/HelloWorld'
-import Page1 from "@/components/Home1.vue";
-import Page2 from "@/components/AboutTeam.vue";
+import Page1 from "@/components/Home/Home1.vue";
+import Page2 from "@/components/Home/AboutTeam.vue";
+import Page3 from "@/components/Home/IrisNewsCarousel.vue";
+import Page4 from "@/components/Home/WhatsIrisOn.vue";
 
 export default {
   name: "Home",
@@ -19,6 +23,8 @@ export default {
   components: {
     Page1,
     Page2,
+    Page3,
+    Page4,
   },
 };
 </script>
