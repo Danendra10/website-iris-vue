@@ -1,0 +1,17 @@
+.spin {
+    opacity: 0 !important;
+}
+
+.spin.active {
+    opacity: 1;
+    animation: spin 2s;
+}
+
+@keyframes spin {
+    0% {
+        transform: translateX(1900px) rotate(360deg);
+    }
+    100% {
+        transform: translateX(0px) rotate(0deg);
+    }
+}

@@ -24,7 +24,17 @@ const routes = [
     path: '/publications',
     name: 'Publications',
     component: () => import(/* webpackChunkName: "about" */ '../views/Publications.vue')
-  }
+  },
+  {
+    path: '/achivements',
+    name: 'Achivements',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Achivements.vue')
+  },
+  {
+    path: '/contactus',
+    name: 'ContactUs',
+    component: () => import(/* webpackChunkName: "about" */ '../views/ContactUs.vue')
+  },
 ]
 
 const router = new VueRouter({

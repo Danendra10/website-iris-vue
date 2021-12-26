@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app color="primary" dark>
+  <v-app-bar app color="primary" dark style="z-index: 9999999">
     <div class="d-flex align-center">
       <v-img
         alt="Vuetify Logo"
@@ -17,11 +17,11 @@
       <span class="mr-4">Home</span>
     </v-btn>
 
-    <v-btn href="/" text>
+    <v-btn href="/publications" text>
       <span class="mr-4">Publication</span>
     </v-btn>
 
-    <v-btn href="/" text>
+    <v-btn href="/achivements" text>
       <span class="mr-4">Achivement</span>
     </v-btn>
 
@@ -126,7 +126,7 @@ export default {
         },
         { 
           text: "Contact Us", 
-          links: "/comingsoon" 
+          links: "/contactus"
         },
       ],
     };

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="margin-top: 20%">
     <div class="d-flex justify-center">
       <div class="left-aboutteam mr-5"></div>
       <h2 class="mx-5 toFadeOnScroll">About Team</h2>

@@ -12,7 +12,12 @@
       ></path>
     </svg>
     <v-row class="d-flex justify-center align-center" style="height: 100%">
-      <v-col cols="6" data-aos="fade" class="pot-rel">
+      <v-col 
+      lg="6"
+      md="12"
+      sm="12" 
+      data-aos="fade" 
+      class="pot-rel d-flex flex-column justify-md-center justify-sm-center">
         <v-img
           v-for="i in robots"
           :key="i.id"
@@ -24,7 +29,12 @@
         ></v-img>
       </v-col>
 
-      <v-col cols="6">
+      <v-col 
+      lg="6"
+      md="12"
+      sm="12"
+      class="d-flex flex-column justify-md-center justify-sm-center container-fluid"
+      id="right-content">
         <div class="container-fluid">
           <iframe
             src="https://www.youtube.com/embed/b6oTI_k6TFU"
@@ -127,33 +137,33 @@ export default {
   position: absolute;
 }
 .roboBack {
-  left: 289px;
-  top: -157px;
+  left: 141px;
+  top: 10px;
   z-index: 1;
 }
 .roboFront {
-  left: 434px;
-  top: -205px;
+  left: 326px;
+  top: 2px;
   z-index: 5;
 }
 .Vector1 {
-  left: 328px;
-  top: 19px;
+  left: 220px;
+  top: 226px;
   z-index: 6;
 }
 .Vector2 {
-  left: 241px;
-  top: -34px;
+  left: 133px;
+  top: 170px;
   z-index: 3;
 }
 .Star {
-  left: 590px;
-  top: -276px;
+  left: 452px;
+  top: -100px;
   z-index: 6;
 }
 .Wheel {
-  left: 148px;
-  top: -37px;
+  left: 40px;
+  top: 180px;
   z-index: 6;
 }
 .iframe-yt {
@@ -162,5 +172,11 @@ export default {
   position: absolute;
   top: 281px;
   border-radius: 2%;
+}
+
+@media(max-width: 631px){
+  #right-content{
+    margin-top: 80px;
+  }
 }
 </style>
