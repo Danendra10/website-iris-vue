@@ -27,13 +27,12 @@
       class="right-content">
         <h2>What is</h2>
         <h2 class="mt-5">IRIS?</h2>
-        <v-img
+        <img
         v-for="pict in rightRobo"
         :key="pict.id"
         :src="pict.src"
         :class="pict.class"
-        style="transform: scale(1.5)">
-        </v-img>
+        style="transform: scale(1.5)"/>
       </v-col>
     </v-row>
   </div>
@@ -89,7 +88,7 @@ export default {
   font-family: Montserrat;
   font-style: normal;
   font-weight: lighter !important;
-  font-size: 20px;
+  font-size: 2vw;
   line-height: 60px;
   text-align: justify;
   margin: 0 auto;
@@ -116,22 +115,22 @@ export default {
 
 .robo {
   position: absolute;
-  top: 1118px;
-  left: 1700px;
+  top: 1018px;
+  left: 1030px;
   z-index: 3;
 }
 
 .vector {
   position: absolute;
-  top: 1400px;
-  left: 1650px;
+  top: 1331px;
+  left: 995px;
   z-index: 2;
 }
 
 .roda {
   position: absolute;
-  top: 1350px;
-  left: 1500px;
+  top: 1211px;
+  left: 818px;
   z-index: 3;
 }
 </style>

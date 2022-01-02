@@ -1,9 +1,7 @@
 <template>
   <v-app>
-    
-    <Navbar />
-    <!-- <Navigation /> -->
-    
+    <Navbar/>
+
       <router-view />
 
     <Footer />
@@ -12,15 +10,21 @@
 
 <script>
 import Navbar from "@/components/Navbar";
-// import Navigation from "@/components/Navigation";
+// import MobileNavbar from "@/components/MobileNavbar";
 import Footer from "@/components/Footer";
 
 export default {
   name: "App",
-  components: { 
+  components: {
     Navbar,
-    // Navigation,
-    Footer
-  }
+    // MobileNavbar,
+    Footer,
+  },
+  data: () => {
+    return {
+      mobileView: true,
+      showNav: false,
+    };
+  },
 };
 </script>

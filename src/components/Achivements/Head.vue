@@ -1,11 +1,11 @@
 <template>
   <div style="padding: 50px 100px">
     <v-row>
-      <v-col lg6 class="d-flex align-center">
+      <v-col class="d-flex align-center col-lg-6">
         <img src="../../../public/Achivements/divs-left.png" alt="" class="" />
       </v-col>
 
-      <v-col lg6 class="d-flex justify-end">
+      <v-col class="d-flex justify-end col-lg-6">
         <img src="../../../public/Achivements/its-dll.png" alt="" />
       </v-col>
     </v-row>

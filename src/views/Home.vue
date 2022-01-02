@@ -5,6 +5,8 @@
     <Page3 />
     <Page4 />
     <Page5   />
+    <Page6   />
+
   </div>
 </template>
 
@@ -18,6 +20,8 @@ import Page2 from "@/components/Home/AboutTeam.vue";
 import Page3 from "@/components/Home/IrisNewsCarousel.vue";
 import Page4 from "@/components/Home/WhatsIrisOn.vue";
 import Page5 from "@/components/Home/DivofIris.vue";
+import Page6 from "@/components/Home/ContactUs.vue";
+
 
 export default {
   name: "Home",
@@ -27,7 +31,9 @@ export default {
     Page2,
     Page3,
     Page4,
-    Page5
+    Page5,
+    Page6
+
   },
 };
 </script>

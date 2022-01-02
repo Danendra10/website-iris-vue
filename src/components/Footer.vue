@@ -1,9 +1,9 @@
 <template>
   <v-footer padless>
-    <v-col class="text-center" cols="5">
+    <v-col class="text-center" lg5 md12>
       <strong>Copyright &copy; {{ new Date().getFullYear() }}</strong>
     </v-col>
-    <v-col class="text-left d-flex" cols="7">
+    <v-col class="text-left d-flex" lg7 md12>
       <a 
       v-for="image in socialMedias" 
       :href="image.link" 

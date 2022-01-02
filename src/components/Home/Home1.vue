@@ -1,6 +1,6 @@
 <template>
-  <div style="padding: 0!important; height: 100vh">
-    <svg
+  <div style="padding: 0!important;">
+    <!-- <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1440 320"
       class="top-background"
@@ -10,14 +10,14 @@
         fill-opacity="1"
         d="M0,192L80,186.7C160,181,320,171,480,181.3C640,192,800,224,960,229.3C1120,235,1280,213,1360,202.7L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
       ></path>
-    </svg>
-    <v-row class="d-flex justify-center align-center" style="height: 100%">
+    </svg> -->
+    <v-row class="d-flex justify-center align-center" style="height: 100vh">
       <v-col 
+      xl="6"
       lg="6"
       md="12"
-      sm="12" 
       data-aos="fade" 
-      class="pot-rel d-flex flex-column justify-md-center justify-sm-center">
+      class="pot-rel d-flex flex-column justify-md-center justify-sm-center ">
         <v-img
           v-for="i in robots"
           :key="i.id"
@@ -25,17 +25,16 @@
           :class="i.class"
           :data-aos="i.d_aos"
           data-aos-duration="3000"
-          style="transform: scale"
         ></v-img>
       </v-col>
 
       <v-col 
+      xl="6"
       lg="6"
       md="12"
-      sm="12"
       class="d-flex flex-column justify-md-center justify-sm-center container-fluid"
       id="right-content">
-        <div class="container-fluid">
+        <div class="container">
           <iframe
             src="https://www.youtube.com/embed/b6oTI_k6TFU"
             title="YouTube video player"
@@ -44,7 +43,6 @@
             allowfullscreen
             class="iframe-yt"
           ></iframe>
-          <img src="assets/img/HomePage/Vector-right.png" alt="" />
         </div>
       </v-col>
     </v-row>
@@ -104,8 +102,7 @@ export default {
 };
 </script>
 
-<style>
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap");
+<style lang="scss" scoped>
 
 .top-background {
   position: absolute;
@@ -174,8 +171,12 @@ export default {
   border-radius: 2%;
 }
 
-@media(max-width: 631px){
-  #right-content{
+#right-content{
+  @media(max-width: 631px){
+    margin-top: 100px
+  }  
+
+  @media(max-width: 631px){
     margin-top: 80px;
   }
 }

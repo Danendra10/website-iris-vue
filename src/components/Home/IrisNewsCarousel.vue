@@ -1,46 +1,88 @@
 <template>
-  <v-container fluid>
-    <carousel :autoplay="true">
-      <v-img
-        v-for="carousel in carousel"
-        :key="carousel.id"
-        :src="carousel.src"
-        :nav="false"
+  <div class="container-fluid mt-70" style="margin-top: 5%">
+    <section class="ftco-section">
+      <div
+        class="d-flex flex-row align-items-center iris-news-head"
+        style="margin-bottom: 100px"
       >
-      </v-img>
-    </carousel>
-  </v-container>
+        <h3 class="title-leader mx-5 toFadeOnScroll">IRIS NEWS</h3>
+      </div>
+      <div class="container">
+        <div class="row toFadeOnScroll">
+          <div class="col-md-12">
+            <div class="featured-carousel owl-carousel">
+              <div class="item">
+                <div class="work">
+                  <div
+                    v-for="imgs in carousel"
+                    :key="imgs.id"
+                    class="
+                      img
+                      d-flex
+                      align-items-center
+                      justify-content-center
+                      rounded
+                    "
+                    :style="imgs.bg"
+                  >
+                    <a
+                      href="#"
+                      class="
+                        icon
+                        d-flex
+                        align-items-center
+                        justify-content-center
+                      "
+                    >
+                      <span class="ion-ios-search"></span>
+                    </a>
+                  </div>
+                  <div class="text pt-3 w-100 text-center bg1-carousel">
+                    <h3>
+                      <a href="#">{{ imgs.title }}</a>
+                    </h3>
+                    <span>Coming Soon...</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
 
-<script>
-import carousel from "vue-owl-carousel";
 
+<script>
 export default {
-  components: {
-    carousel,
-  },
+  components: {},
   data: () => {
     return {
       carousel: [
         {
           id: 1,
           name: "fira-2018",
-          src: require("../../../public/Home/News/fira2018.jpg"),
+          src: "background-image: url(../../../public/Home/News/1.png)",
+          title: "FIRA RoboWorldCup 2018",
         },
         {
           id: 2,
           name: "kri-2021",
-          src: require("../../../public/Home/News/fira2018c.jpg"),
+          src: "background-image: url(../../../public/Home/News/2.png)",
+          title: "KRI 2021",
         },
         {
           id: 3,
           name: "robocup-2021",
-          src: require("../../../public/Home/News/fira2018c2.jpg"),
+          src: "background-image: url(../../../public/Home/News/2.png)",
+          title: "Robocup 2021",
         },
         {
           id: 4,
           name: "robocup-2021",
-          src: require("../../../public/Home/News/fira2018c3.jpg"),
+          src: "background-image: url(../../../public/Home/News/fira2018c3.jpg)",
+          title: "",
         },
       ],
     };
@@ -49,4 +91,5 @@ export default {
 </script>
 
 <style>
+
 </style>

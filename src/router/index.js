@@ -35,6 +35,18 @@ const routes = [
     name: 'ContactUs',
     component: () => import(/* webpackChunkName: "about" */ '../views/ContactUs.vue')
   },
+
+  //hanya trial
+  {
+    path: '/trial',
+    name: 'trial',
+    component: () => import(/* webpackChunkName: "about" */ '../views/trial.vue')
+  },
+  {
+    path: '/trial2',
+    name: 'trial2',
+    component: () => import(/* webpackChunkName: "about" */ '../views/trial2.vue')
+  },
 ]
 
 const router = new VueRouter({

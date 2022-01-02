@@ -4,7 +4,7 @@
       <v-col 
       cols="7" 
       xl="7"
-      class="d-flex flex-column align-items-center">
+      class="d-flex flex-column align-center justify-center">
         <div class="event-text container ">
           <h2>What IRIS on right now?</h2>
           <h2 id="event-special">IRIS on</h2>

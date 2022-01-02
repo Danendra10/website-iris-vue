@@ -68,7 +68,6 @@ export default {
     font-size: 120px;
   }
 }
-
 @media (max-width: 1251px) {
   .publ h1 {
     font-size: 100px;
@@ -78,7 +77,11 @@ export default {
     justify-content: center;
   }
 }
-
+@media (max-width: 351px) {
+  .publ h1 {
+    font-size: 51px;
+  }
+}
 @media (max-width: 835px) {
   .bottom-assets {
     position: absolute;
