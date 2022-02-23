@@ -5,23 +5,23 @@
     </div>
 
     <div>
-      <v-row 
-      style="padding: 0 60px; margin-top: 70px"
-      v-for="data in papers"
-      :key="data.id">
-        <v-col 
-        class="top" 
-        lg="10" 
-        md="12"
-        data-aos="fade-right"
-        data-aos-duration="1000"
+      <v-row
+        style="padding: 0 60px; margin-top: 70px"
+        v-for="data in papers"
+        :key="data.id"
+      >
+        <v-col
+          class="top"
+          lg="10"
+          md="12"
+          data-aos="fade-right"
+          data-aos-duration="1000"
         >
-          {{ data.title }}  
+          {{ data.title }}
         </v-col>
 
-        <v-col class="d-flex justify-end ">
-          <a 
-          :href="data.href" target="_blank">
+        <v-col class="d-flex justify-end">
+          <a :href="data.href" target="_blank">
             <v-btn
               depressed
               color="#6DDCCF"
@@ -47,43 +47,53 @@
 <script>
 export default {
   data: () => {
-    return{
-      papers:[
+    return {
+      papers: [
         {
           id: 1,
-          title: "Artificial Neural Network untuk Pengukuran Posisi Bola Menggunakan Kamera Omnidireksional Pada Robot Sepak Bola Beroda. Published in Indonesian Symposium on Robotic Systems and Control - ISRSC 2017, Universitas Pendidikan Indonesia Bandung",
-          href: "file:///../../../public/Publications/Files/Artificial _Neural_Network_Untuk_Pengukuran _Posisi_Bola_Menggunakan_Kamera _Omnidireksional_Pada_Robot_Sepak_Bola_Beroda.pdf",
+          title:
+            "Ball Position Transformation with Artificial Intelligence Based on Tensorflow Libraries, 2021",
+          href: "file:///../../../public/Publications/Files/Ball_Position_Transformation_with_Artificial_Intelligence_Based_on_Tensorflow_Libraries.pdf",
         },
         {
           id: 2,
-          title: "Penggunaan Kamera Global untuk Menentukan Posisi Robot pada Lapangan. Published in Indonesian Symposium on Robotic Systems and Control - ISRSC 2018, Universitas Muhammadiyah Yogyakarta.",
-          href: "file:///../../../public/Publications/Files/Penggunaan_Kamera_Global_untuk_Menentukan_Posisi_Robot_pada_Lapangan.pdf",
+          title: "Advanced Attack and Defense Strategy Algorithm with Dynamic Role Assignment for Wheeled Soccer Robot, 2021",
+          href: "file:///../../../public/Publications/Files/ADVANCE_ATTACK_AND_DEFENSE_STRATEGY_ALGORITHM_WITH_DYNAMIC_ROLE_ASSIGNMENT_FOR_WHEELED_SOCCER_ROBOT.pdf",
         },
         {
           id: 3,
-          title: "Sistem Pengenalan Suara untuk Perintah pada Robot Sepak Bola Beroda. Published in Indonesian Symposium on Robotic Systems and Control - ISRSC 2019, Universitas Dian Nuswantoro Semarang.",
-          href: "file:///../../../public/Publications/Files/Sistem_Pengenalan_Suara_untuk_Perintah_pada_Robot_Sepak_Bola_Beroda.pdf",
+          title:
+            "Artificial Neural Network untuk Pengukuran Posisi Bola Menggunakan Kamera Omnidireksional Pada Robot Sepak Bola Beroda. Published in Indonesian Symposium on Robotic Systems and Control - ISRSC 2017, Universitas Pendidikan Indonesia Bandung",
+          href: "file:///../../../public/Publications/Files/Artificial _Neural_Network_Untuk_Pengukuran _Posisi_Bola_Menggunakan_Kamera _Omnidireksional_Pada_Robot_Sepak_Bola_Beroda.pdf",
         },
         {
           id: 4,
-          title: "Dikairono, R., Rachman, A. A., Setiawardhana, Sardjono, T. A., & Purwanto, D. (2017). Motion Planning Simulator for Holonomic Robot Soccer Platform. 2017 International Seminar on Intelligent Technology and Its Applications (ISITIA).",
-          href: "file:///../../../public/Publications/Files/Motion_Planning_Simulator_for_Holomic_Robot_Soccer_Platform.pdf",
+          title:
+            "Penggunaan Kamera Global untuk Menentukan Posisi Robot pada Lapangan. Published in Indonesian Symposium on Robotic Systems and Control - ISRSC 2018, Universitas Muhammadiyah Yogyakarta.",
+          href: "file:///../../../public/Publications/Files/Penggunaan_Kamera_Global_untuk_Menentukan_Posisi_Robot_pada_Lapangan.pdf",
         },
         {
           id: 5,
-          title: "Setiawardhana, Dikairono, R., Sardjono, T. A., & Purwanto, D. (2017). Visual Ball Tracking and Prediction with Unique Segmented Area on Soccer Robot. 2017 International Seminar on Intelligent Technology and Its Applications (ISITIA).",
-          href: "file:///../../../public/Publications/Files/Visual_Ball_Tracking_and_Prediction_with_Unique_Segmented_Area_on_Soccer_Robot.pdf",
+          title:
+            "Sistem Pengenalan Suara untuk Perintah pada Robot Sepak Bola Beroda. Published in Indonesian Symposium on Robotic Systems and Control - ISRSC 2019, Universitas Dian Nuswantoro Semarang.",
+          href: "file:///../../../public/Publications/Files/Sistem_Pengenalan_Suara_untuk_Perintah_pada_Robot_Sepak_Bola_Beroda.pdf",
         },
         {
           id: 6,
-          title: "Dikairono R., Setiawardhana, Budiman F., Purwanto D., & Sardjono T. A. (2021). Advanced Attack and Defense Strategy Algorithm with Dynamic Role Assignment for Wheeled Soccer Robot",
-          href: "file:///../../../public/Publications/Files/ADVANCE_ATTACK_AND_DEFENSE_STRATEGY_ALGORITHM_WITH_DYNAMIC_ROLE_ASSIGNMENT_FOR_WHEELED_SOCCER_ROBOT.pdf",
+          title:
+            "Dikairono, R., Rachman, A. A., Setiawardhana, Sardjono, T. A., & Purwanto, D. (2017). Motion Planning Simulator for Holonomic Robot Soccer Platform. 2017 International Seminar on Intelligent Technology and Its Applications (ISITIA).",
+          href: "file:///../../../public/Publications/Files/Motion_Planning_Simulator_for_Holomic_Robot_Soccer_Platform.pdf",
         },
-      ]
-    }
-  }
-
-}
+        {
+          id: 7,
+          title:
+            "Setiawardhana, Dikairono, R., Sardjono, T. A., & Purwanto, D. (2017). Visual Ball Tracking and Prediction with Unique Segmented Area on Soccer Robot. 2017 International Seminar on Intelligent Technology and Its Applications (ISITIA).",
+          href: "file:///../../../public/Publications/Files/Visual_Ball_Tracking_and_Prediction_with_Unique_Segmented_Area_on_Soccer_Robot.pdf",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style>
