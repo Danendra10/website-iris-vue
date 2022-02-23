@@ -11,21 +11,20 @@
         d="M0,192L80,186.7C160,181,320,171,480,181.3C640,192,800,224,960,229.3C1120,235,1280,213,1360,202.7L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
       ></path>
     </svg> -->
-    <v-row class="d-flex justify-center align-center" style="height: 100vh">
+
+      <v-row class="d-flex justify-center align-center">
       <v-col 
       xl="6"
       lg="6"
       md="12"
       data-aos="fade" 
       class="pot-rel d-flex flex-column justify-md-center justify-sm-center ">
-        <v-img
-          v-for="i in robots"
-          :key="i.id"
-          :src="i.src"
-          :class="i.class"
-          :data-aos="i.d_aos"
+        <img
+          src="../../../public/Home/Robots/left/left.png"
+          data-aos="fade-right"
           data-aos-duration="3000"
-        ></v-img>
+          class="img-fluid"
+        >
       </v-col>
 
       <v-col 
@@ -34,7 +33,6 @@
       md="12"
       class="d-flex flex-column justify-md-center justify-sm-center container-fluid"
       id="right-content">
-        <div class="container">
           <iframe
             src="https://www.youtube.com/embed/b6oTI_k6TFU"
             title="YouTube video player"
@@ -42,8 +40,9 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
             class="iframe-yt"
+            data-aos="fade-left"
+            data-aos-duration="3000"
           ></iframe>
-        </div>
       </v-col>
     </v-row>
   </div>
@@ -166,12 +165,16 @@ export default {
 .iframe-yt {
   width: 560px;
   height: 315px;
-  position: absolute;
-  top: 281px;
+  // position: absolute;
+  // top: 281px;
   border-radius: 2%;
 }
 
 #right-content{
+  @media(max-width: 1260px)
+  {
+    padding: 0 250px;
+  }
   @media(max-width: 631px){
     margin-top: 100px
   }  

@@ -7,7 +7,7 @@
       class="d-flex flex-column align-center justify-center">
         <div class="event-text container ">
           <h2>What IRIS on right now?</h2>
-          <h2 id="event-special">IRIS on</h2>
+          <!-- <h2 id="event-special">IRIS on</h2> -->
         </div>
         <div class="container">
           <v-img
@@ -129,5 +129,10 @@ p#event-text-text {
   /* identical to box height */
   color: #e8e1f0;
   z-index: -1;
+}
+@media screen and (min-width: 989){
+  h2#event-special{
+    display: none!important;
+  }
 }
 </style>

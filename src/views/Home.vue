@@ -6,7 +6,7 @@
     <Page4 />
     <Page5   />
     <Page6   />
-
+    <Page7 />>
   </div>
 </template>
 
@@ -21,6 +21,7 @@ import Page3 from "@/components/Home/IrisNewsCarousel.vue";
 import Page4 from "@/components/Home/WhatsIrisOn.vue";
 import Page5 from "@/components/Home/DivofIris.vue";
 import Page6 from "@/components/Home/ContactUs.vue";
+import Page7 from '@/components/Home/maps.vue'
 
 
 export default {
@@ -32,8 +33,8 @@ export default {
     Page3,
     Page4,
     Page5,
-    Page6
-
+    Page6,
+    Page7
   },
 };
 </script>

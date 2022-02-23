@@ -19,7 +19,7 @@
           {{ data.title }}  
         </v-col>
 
-        <v-col class="d-flex justify-lg-end justify-md-center">
+        <v-col class="d-flex justify-end ">
           <a 
           :href="data.href" target="_blank">
             <v-btn
@@ -71,8 +71,13 @@ export default {
         },
         {
           id: 5,
-          title: "Setiawardhana, Dikariono, R., Sardjono, T. A., & Purwanto, D. (2017). Visual Ball Tracking and Prediction with Unique Segmented Area on Soccer Robot. 2017 International Seminar on Intelligent Technology and Its Applications (ISITIA).",
+          title: "Setiawardhana, Dikairono, R., Sardjono, T. A., & Purwanto, D. (2017). Visual Ball Tracking and Prediction with Unique Segmented Area on Soccer Robot. 2017 International Seminar on Intelligent Technology and Its Applications (ISITIA).",
           href: "file:///../../../public/Publications/Files/Visual_Ball_Tracking_and_Prediction_with_Unique_Segmented_Area_on_Soccer_Robot.pdf",
+        },
+        {
+          id: 6,
+          title: "Dikairono R., Setiawardhana, Budiman F., Purwanto D., & Sardjono T. A. (2021). Advanced Attack and Defense Strategy Algorithm with Dynamic Role Assignment for Wheeled Soccer Robot",
+          href: "file:///../../../public/Publications/Files/ADVANCE_ATTACK_AND_DEFENSE_STRATEGY_ALGORITHM_WITH_DYNAMIC_ROLE_ASSIGNMENT_FOR_WHEELED_SOCCER_ROBOT.pdf",
         },
       ]
     }
